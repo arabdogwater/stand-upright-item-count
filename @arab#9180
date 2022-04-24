@@ -1,0 +1,64 @@
+
+ local Arrow = 0
+        local requiem = 0
+        local Dio = 0
+        local Unusual = 0
+        local Ketchup = 0
+        local Rokakaka = 0
+        local Ultimate = 0
+        local Cursed = 0
+        local Coprse = 0
+        local C = 0
+        local D = 0
+        local N = 0
+        for _,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+             if v.Name == "Stand Arrow" then
+            Arrow =  Arrow  + 1
+                     elseif v.Name == "Requiem Arrow" then
+            requiem =  requiem  + 1
+                     elseif v.Name == "Dio's Diary" then
+                 Dio =  Dio  + 1
+                     elseif v.Name == "Unusual Arrow" then
+                   Unusual = Unusual + 1
+                     elseif v.Name == "Ketchup" then
+                    Ketchup = Ketchup + 1
+                elseif v.Name == "Rokakaka" then
+                    Rokakaka = Rokakaka + 1
+                elseif v.Name == "Ultimate Diary" then
+                     Ultimate = Ultimate + 1
+                elseif v.Name == "Cursed Orb" then
+                     Cursed = Cursed + 1
+                elseif v.Name == "Saint's Limb" then
+                    Coprse = Coprse + 1
+                elseif v.Name == "Saint's Torso" then
+                    C = C + 1
+                elseif v.Name == "Saint's Skull" then
+                    D = D + 1
+                elseif v.Name == "Charged Arrow" then
+                    N = N + 1
+        end
+        end
+         print( "==>" .. game.Players.LocalPlayer.Character.Name .. " Inventory: <==" )
+        print("Stand Arrow:     " .. Arrow)
+        print("Requiem Arrow:   " .. requiem)
+        print("DIO'S Diary:     " .. Dio) 
+        print("KetChup:         " .. Ketchup)
+        print("Saint's Limb:    " .. Coprse)
+        print("Saint's Torso:   " .. C)
+        print("Saint's Skull:   " .. D)
+        print("📖ULT Diary:     " .. Ultimate)
+        print("🔮Cursed Orb:    " .. Cursed)
+        print("🔴Rokakaka:      " .. Rokakaka)
+        print("🏹Charged Arrow: " .. N)
+                
+ local total = 0
+ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+  if v:IsA("Tool") then
+       total = total + 1 
+  end
+ end
+ print("-----------------")
+ print("items left until full: " .. 500-total)
+  print("total items: " .. total)
+   print("-----------------")
+ 
